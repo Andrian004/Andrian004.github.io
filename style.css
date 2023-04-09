@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    margin-top: 20px;
+}
+
+.score{
+    width: 450px;
+    height: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    background: linear-gradient(90deg, blue, white, red);
+    display: flex;
+    justify-content: space-around;
+}
+
+.comp-name, .player-name{
+    color: #fff;
+    width: 100px;
+}
+
+.hasil{
+    margin: auto;
+    width: 50px;
+    background: #000;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container{
+    margin: auto;
+    margin-top: 20px;
+    padding: 2px;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, red, blue);
+}
+
+.container .comp{
+    background: linear-gradient(45deg, white, red);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .comp h3{
+    margin-bottom: 10px;
+}
+
+.container .comp .comp-value{
+    width: 70px;
+    height: 70px;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .player{
+    background: linear-gradient(45deg, blue, white);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .player h3{
+    margin-bottom: 20px;
+}
+
+.container .player .your-input{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.batu, .kertas, .gunting{
+    width: 70px;
+    height: 70px;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button{
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.active{
+    background: lightgreen;
+}
+
+@media (max-width: 460px){
+    .score, .container{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
