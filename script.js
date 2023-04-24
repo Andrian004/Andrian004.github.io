@@ -21,7 +21,7 @@ const getHasil = (comp, player) => {
 
 // Animation
 const animation = () => {
-    const text = ['gajah', 'semut', 'orang'];
+    const text = ['batu', 'gunting', 'kertas'];
     let i = 0;
     const waktuMulai = new Date().getTime();
     setInterval(function () {
