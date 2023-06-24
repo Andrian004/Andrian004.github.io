@@ -1,2 +1,2 @@
-My simple game
+# My simple game
 
