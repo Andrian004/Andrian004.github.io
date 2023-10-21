@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Andri" />
+    <meta property="og:title" content="Andrian004" />
+    <meta property="og:description" content="Personal Website" />
+    <meta property="og:image" content="./assets/anonymous.jpg" />
+    <meta
+      name="description"
+      content="Halo, saya Andri atau bisa dipanggil Andrian. Ini adalah situs web pribadi saya di mana saya berbagi pengalaman, pengetahuan, dan minat saya dalam pemrograman. Jelajahi halaman ini untuk mengetahui lebih banyak tentang saya dan apa yang saya tawarkan."
+    />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <title>Home | Andri Adhi Nugroho</title>
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- local css -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <nav
+      id="navbar-example2"
+      class="header navbar navbar-expand-lg bg-body-tertiary fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-semibold" href="#">Portofolio</a>
+
+        <button
+          class="navbar-toggler shadow-none border-0 outline-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Portofolio
+            </h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-2 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#scrollspyHeading1"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4">Journey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading5">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="theme-wraper">
+          <button class="btn btn-theme">
+            <i class="bi bi-sun-fill"></i>
+          </button>
+          <button class="d-none"><i class="bi bi-moon-fill"></i></button>
+        </div> -->
+      </div>
+    </nav>
+
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-light p-3 rounded-2"
+      tabindex="0"
+    >
+      <!-- hero section -->
+      <section
+        id="scrollspyHeading1"
+        class="container hero min-vh-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="fw-bold">Hello Guys!</h1>
+        <h2 class="fw-medium text-center">
+          Welcome to my <span class="text-purple">Personal Website</span>
+        </h2>
+        <p class="text-center">
+          You can explore everythings about me. Click the button bellow to
+          start!
+        </p>
+        <a href="#scrollspyHeading2" class="btn btn-purple">Let's Go</a>
+      </section>
+
+      <!-- profile section -->
+      <section
+        id="scrollspyHeading2"
+        class="container profile d-flex flex-column-reverse flex-lg-row min-vh-100 gap-4 gap-lg-0"
+      >
+        <div
+          class="profile-desc d-flex flex-column justify-content-center col-lg-6"
+        >
+          <h1 class="fw-bold">Hi Guys!</h1>
+          <h2 class="fw-medium">
+            My Name is
+            <span class="text-purple fw-bold">Andri Adhi Nugroho</span>
+          </h2>
+          <h3>
+            And I'm a
+            <span id="autoWrite" class="text-purple fw-bold"></span>
+          </h3>
+          <p>
+            Self-taught programmer with a deep interest in coding and
+            technologies. Excited to leverage my self-learning and practical
+            experience to contribute in software development projects and
+            overcome programming challenges.
+          </p>
+          <div class="d-flex gap-2 mb-4">
+            <a href="/" class="btn btn-circle-purple m-0">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="/" class="btn btn-circle-purple m-0">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="/" class="btn btn-circle-purple m-0">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="/" class="btn btn-circle-purple m-0">
+              <i class="bi bi-globe2"></i>
+            </a>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-purple-disable">Download CV</button>
+            <a href="#scrollspyHeading3" class="btn btn-purple-disable"
+              >Next Page</a
+            >
+          </div>
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center justify-content-lg-end col-12 col-lg-6"
+        >
+          <div class="wraper d-flex justify-content-center align-items-center">
+            <div class="profile-img">
+              <img src="./assets/anonymous.jpg" alt="..." />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects section -->
+      <section
+        id="scrollspyHeading3"
+        class="container projects d-flex align-items-center justify-content-start gap-4 min-vh-100"
+      >
+        <div class="swiper mySwiper p-0 m-0 col-lg-8">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="d-flex align-items-center gap-4">
+                <div class="card">
+                  <img src="./assets/nasa-img.png" alt="" />
+                </div>
+                <h1 class="text-purple fw-bold">NASA Class_</h1>
+              </div>
+              <div class="text-start mt-4">
+                <div class="project-desc mb-3">
+                  <div class="d-flex gap-2 mb-2">
+                    <button
+                      id="btnDesc1"
+                      class="btn btn-purple-disable activated"
+                      onclick="showDesc(1)"
+                    >
+                      <i class="bi bi-card-text"></i> Desc
+                    </button>
+                    <button
+                      id="btnStack1"
+                      class="btn btn-purple-disable"
+                      onclick="showStack(1)"
+                    >
+                      <i class="bi bi-stars"></i> Tech Stack
+                    </button>
+                  </div>
+                  <div id="project1" class="desc-layer">
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iste, laborum repudiandae, libero sed ducimus molestias
+                      dolores expedita hic quidem accusamus fuga accusantium
+                      repellendus alias excepturi, nemo laudantium eius
+                      obcaecati commodi. Quisquam atque aliquid fugiat vitae
+                      maxime distinctio explicabo accusantium ea ipsum expedita
+                      doloremque illo natus, voluptates delectus quod enim
+                      laborum.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="/" class="btn btn-purple-disable"
+                    ><i class="bi bi-github"></i> Source Code</a
+                  >
+                  <a
+                    href="https://ami-learning-club.netlify.app"
+                    class="btn btn-purple-disable"
+                    ><i class="bi bi-globe2"></i> Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex align-items-center gap-4">
+                <div class="card">
+                  <img src="./assets/rb-img.png" alt="" />
+                </div>
+                <h1 class="text-purple fw-bold">RB Community_</h1>
+              </div>
+              <div class="text-start mt-4">
+                <div class="project-desc mb-3">
+                  <div class="d-flex gap-2 mb-2">
+                    <button
+                      id="btnDesc2"
+                      class="btn btn-purple-disable activated"
+                      onclick="showDesc(2)"
+                    >
+                      <i class="bi bi-card-text"></i> Desc
+                    </button>
+                    <button
+                      id="btnStack2"
+                      class="btn btn-purple-disable"
+                      onclick="showStack(2)"
+                    >
+                      <i class="bi bi-stars"></i> Tech Stack
+                    </button>
+                  </div>
+                  <div id="project2" class="desc-layer">
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iste, laborum repudiandae, libero sed ducimus molestias
+                      dolores expedita hic quidem accusamus fuga accusantium
+                      repellendus alias excepturi, nemo laudantium eius
+                      obcaecati commodi. Quisquam atque aliquid fugiat vitae
+                      maxime distinctio explicabo accusantium ea ipsum expedita
+                      doloremque illo natus, voluptates delectus quod enim
+                      laborum.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="/" class="btn btn-purple-disable"
+                    ><i class="bi bi-github"></i> Source Code</a
+                  >
+                  <a
+                    href="https://restoe-boemi-prototype.netlify.app"
+                    class="btn btn-purple-disable"
+                    ><i class="bi bi-globe2"></i> Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex align-items-center gap-4">
+                <div class="card">
+                  <img src="./assets/takaiphone-img.png" alt="" />
+                </div>
+                <h1 class="text-purple fw-bold">TakaiPhone_</h1>
+              </div>
+              <div class="text-start mt-4">
+                <div class="project-desc mb-3">
+                  <div class="d-flex gap-2 mb-2">
+                    <button
+                      id="btnDesc3"
+                      class="btn btn-purple-disable activated"
+                      onclick="showDesc(3)"
+                    >
+                      <i class="bi bi-card-text"></i> Desc
+                    </button>
+                    <button
+                      id="btnStack3"
+                      class="btn btn-purple-disable"
+                      onclick="showStack(3)"
+                    >
+                      <i class="bi bi-stars"></i> Tech Stack
+                    </button>
+                  </div>
+                  <div id="project3" class="desc-layer">
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iste, laborum repudiandae, libero sed ducimus molestias
+                      dolores expedita hic quidem accusamus fuga accusantium
+                      repellendus alias excepturi, nemo laudantium eius
+                      obcaecati commodi. Quisquam atque aliquid fugiat vitae
+                      maxime distinctio explicabo accusantium ea ipsum expedita
+                      doloremque illo natus, voluptates delectus quod enim
+                      laborum.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="/" class="btn btn-purple-disable"
+                    ><i class="bi bi-github"></i> Source Code</a
+                  >
+                  <a
+                    href="https://takaiphone.netlify.app"
+                    class="btn btn-purple-disable"
+                    ><i class="bi bi-globe2"></i> Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-lg-none">
+              <div
+                class="d-flex w-100 h-100 align-items-center justify-content-center gap-2"
+              >
+                <a href="#scrollspyHeading2" class="btn btn-purple-disable"
+                  >Prev Page</a
+                >
+                <a href="#scrollspyHeading4" class="btn btn-purple-disable"
+                  >Next Page</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div
+          class="d-none d-lg-flex flex-column justify-content-between gap-5 col-lg-4"
+        >
+          <div class="btn-projects-wraper d-flex align-items-center">
+            <a href="#scrollspyHeading2" class="btn btn-purple px-4"
+              >Prev_Page</a
+            >
+            <div class="line-center"></div>
+          </div>
+          <div class="center">
+            <h1 class="text-purple fw-bold">Last Projects</h1>
+            <p>
+              In my latest web development project, I used some pretty popular
+              technologies. I have also successfully created and optimized
+              websites to ensure a great user experience across a variety of
+              devices and screen sizes.
+            </p>
+          </div>
+          <div class="btn-projects-wraper d-flex align-items-center">
+            <a href="#scrollspyHeading4" class="btn btn-purple px-4"
+              >Next_Page</a
+            >
+            <div class="line-center"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- journey section -->
+      <section
+        id="scrollspyHeading4"
+        class="container journey d-flex flex-column gap-4 justify-content-center align-items-center min-vh-100"
+      >
+        <h1 class="h-100 fw-bold text-purple">My Journey</h1>
+        <div class="journey-content position-relative">
+          <div id="cardJourney" class="card-journey scale-1">
+            <h3 class="text-center">First Trip</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              omnis corporis consequatur aspernatur odit dolorem nesciunt
+              blanditiis totam similique officiis illo nisi error. Accusamus
+              perspiciatis et architecto explicabo optio. Nobis ducimus minima
+              beatae officia tempora quos quis. Doloremque harum neque
+              asperiores architecto ducimus, velit vero corrupti magnam illum
+              odio nulla.
+            </p>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-end w-100 h-100"
+          >
+            <img src="./assets/mobil.png" alt="..." width="180" height="120" />
+          </div>
+          <button class="btn btn-purple-disable absolute-start">
+            <i class="bi bi-caret-left-fill"></i> Back
+          </button>
+          <button class="btn btn-purple-disable absolute-end" onclick="run()">
+            Run <i class="bi bi-caret-right-fill"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section
+        id="scrollspyHeading5"
+        class="container contact min-vh-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="text-purple fw-bold">Contact Me</h1>
+        <div class="contact-wraper">
+          <form class="w-100" onsubmit="submit()">
+            <div class="mb-3">
+              <label for="exampleFormControlInput0" class="form-label"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="form-control shadow-none"
+                id="exampleFormControlInput0"
+                placeholder="Your name..."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control shadow-none"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Massage</label
+              >
+              <textarea
+                class="form-control shadow-none"
+                id="exampleFormControlTextarea1"
+                placeholder="Leave message"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-purple-disable">
+              <i class="bi bi-send-fill"></i> Send
+            </button>
+          </form>
+        </div>
+        <div class="d-flex gap-2 mt-4">
+          <a href="#scrollspyHeading1" class="btn btn-purple-disable">
+            <i class="bi bi-chevron-double-up"></i> Go to top
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- local script -->
+    <script src="script/script.js"></script>
+
+    <script>
+      // swiper config
+      const swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 0,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
