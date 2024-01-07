@@ -12,16 +12,20 @@ const projectDesc =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laborum repudiandae, libero sed ducimus molestiasdolores expedita hic quidem accusamus fuga accusantium repellendus alias excepturi, nemo laudantium eius obcaecati commodi. Quisquam atque aliquid fugiat vitae maxime distinctio explicabo accusantium ea ipsum expedita doloremque illo natus, voluptates delectus quod enim laborum.";
 
 const projects = {
-  projectOne: [{ href: "/", content: "React" }],
+  projectOne: [
+    { href: "https://nextjs.org", content: "Next.js 14" },
+    { href: "https://www.typescriptlang.org", content: "Typescript" },
+    { href: "https://www.prisma.io", content: "Prisma ORM" },
+    { href: "https://www.mongodb.com", content: "MongoDB Atlas" },
+  ],
   projectTwo: [
-    { href: "/", content: "React" },
-    { href: "/", content: "Express" },
-    { href: "/", content: "MongoDB Atlas" },
+    { href: "https://react.dev", content: "React (vite)" },
+    { href: "https://javascript.info", content: "Javascript" },
   ],
   projectThree: [
-    { href: "/", content: "Nuxt 2" },
-    { href: "/", content: "Express" },
-    { href: "/", content: "MongoDB Atlas" },
+    { href: "https://nuxt.com", content: "Nuxt 3" },
+    { href: "https://www.typescriptlang.org", content: "Typescript" },
+    { href: "https://jikan.moe", content: "Open API" },
   ],
 };
 
